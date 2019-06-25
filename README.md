@@ -5,10 +5,10 @@ This NPM package includes Zaius's preferred [TSLint](https://palantir.github.io/
 Install the package as a dev dependency using yarn or npm.
 ```bash
 # yarn:
-yarn add -D zaius-tslint
+yarn add -D @zaiusinc/tslint-presets
 
 # npm:
-npm install -D zaius-tslint
+npm install -D @zaiusinc/tslint-presets
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ After adding the package to your project, create or update your `tslint.json` fi
 
 ```json
 {
-  "extends": "zaius-tslint/node.json",
+  "extends": "@zaiusinc/tslint-presets/node.json",
   "rules": {}
 }
 ```
@@ -25,7 +25,7 @@ and for React projects:
 
 ```json
 {
-  "extends": "zaius-tslint/react.json",
+  "extends": "@zaiusinc/tslint-presets/react.json",
   "rules": {}
 }
 ```

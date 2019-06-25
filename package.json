@@ -1,9 +1,9 @@
 {
-  "name": "zaius-tslint",
+  "name": "@zaiusinc/tslint-presets",
   "version": "1.0.0",
   "description": "Zaius preferred TSLint rules",
   "main": "node.json",
-  "repository": "https://github.com/ZaiusInc/zaius-tslint",
+  "repository": "https://github.com/ZaiusInc/tslint-presets",
   "license": "MIT",
   "devDependencies": {
     "tslint": "^5.18.0"
