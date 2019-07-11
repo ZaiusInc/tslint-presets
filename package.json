@@ -1,6 +1,6 @@
 {
   "name": "@zaiusinc/tslint-presets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zaius preferred TSLint rules",
   "main": "node.json",
   "repository": "https://github.com/ZaiusInc/tslint-presets",

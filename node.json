@@ -35,6 +35,10 @@
     "no-unused-expression": [
       true,
       "allow-fast-null-checks"
+    ],
+    "curly": [
+      true,
+      "ignore-same-line"
     ]
   }
 }
