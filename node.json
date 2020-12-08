@@ -30,7 +30,8 @@
     },
     "variable-name": [
       true,
-      "allow-leading-underscore"
+      "allow-leading-underscore",
+      "require-const-for-all-caps"
     ],
     "no-namespace": false,
     "no-unused-expression": [
