@@ -1,0 +1,27 @@
+name: Publish TSLint-Presets Package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-to-github:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com
+          scope: '@zaiusinc'
+      - name: npm ci
+        env:
+          INSTALL_PKGS_TOKEN: ${{ secrets.INSTALL_PKGS_TOKEN }}
+        run: npm ci
+      - name: Set github package registry
+        run: npm config set github-pkg-registry:registry https://npm.pkg.github.com
+      - name: Set github package token
+        run: npm set //npm.pkg.github.com/:_authToken=${{ secrets.INSTALL_PKGS_TOKEN }}
+      - name: Publish to github package registry
+        run: npm publish --registry=https://npm.pkg.github.com/ --userconfig
+
+
